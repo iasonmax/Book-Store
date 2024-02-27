@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineBookShop", "OnlineBookShop\OnlineBookShop.csproj", "{D114E151-32E0-4A8A-A515-134CD3F37568}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineBookStoreRazor", "OnlineBookStoreRazor\OnlineBookStoreRazor.csproj", "{10027280-50E5-42DF-8132-932159C873B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D114E151-32E0-4A8A-A515-134CD3F37568}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D114E151-32E0-4A8A-A515-134CD3F37568}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D114E151-32E0-4A8A-A515-134CD3F37568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10027280-50E5-42DF-8132-932159C873B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10027280-50E5-42DF-8132-932159C873B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10027280-50E5-42DF-8132-932159C873B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10027280-50E5-42DF-8132-932159C873B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
