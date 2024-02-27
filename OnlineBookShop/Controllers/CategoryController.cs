@@ -1,7 +1,7 @@
-﻿using OnlineBookShop.data;
-using OnlineBookShop.Models;
+﻿using BookShop.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using OnlineBookShop.DataAccess.data;
 
 namespace OnlineBookShop.Controllers
 {

@@ -1,5 +1,6 @@
+using BookShop.Models;
 using Microsoft.AspNetCore.Mvc;
-using OnlineBookShop.Models;
+
 using System.Diagnostics;
 
 namespace OnlineBookShop.Controllers
