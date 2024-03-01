@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 
 
-namespace OnlineBookShop.DataAccess.data
+namespace BookShop.DataAccess.data
 {
     public class ApplicationDbContext : DbContext 
     {
