@@ -14,30 +14,27 @@ namespace BookShop.DataAccess.Repository
     {
         private readonly ApplicationDbContext _db;
         internal DbSet<T> dbSet;
-        public Repository(ApplicationDbContext _db)
+        public Repository(ApplicationDbContext db)
         {
-            _db = _db;
+            _db = db;
             this.dbSet = _db.Set<T>();
-            // _db.Catefories == dbSet
+            
         }
         public void Add(T entity)
         {
             dbSet.Add(entity);
         }
-
-        public IEnumerable<T> GetAll()
-        {
-            IQueryable<T> query = dbSet;
-            return query.ToList();
-        }
-
-        public T GetFirstOrDefault(Expression<Func<T, bool>> filter)
+        public T Get(Expression<Func<T, bool>> filter)
         {
             IQueryable<T> query = dbSet;
             query = query.Where(filter);
             return query.FirstOrDefault();
         }
-
+        public IEnumerable<T> GetAll()
+        {
+            IQueryable<T> query = dbSet;
+            return query.ToList();
+        }
         public void Remove(T entity)
         {
             dbSet.Remove(entity);
@@ -47,5 +44,8 @@ namespace BookShop.DataAccess.Repository
         {
             dbSet.RemoveRange(entity);
         }
+
+       
+     
     }
 }

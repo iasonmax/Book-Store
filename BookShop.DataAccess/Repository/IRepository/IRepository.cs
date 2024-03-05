@@ -11,9 +11,9 @@ namespace BookShop.DataAccess.Repository.IRepository
     {
         //T - Category
         IEnumerable<T> GetAll();
-        T GetFirstOrDefault(Expression<Func<T, bool>> filter);
-        void Add(T item);
-        void Remove(T item);
-        void RemoveRange(IEnumerable<T> items);
+        T Get(Expression<Func<T, bool>> filter);
+        void Add(T entity);
+        void Remove(T entity);
+        void RemoveRange(IEnumerable<T> entity);
     }
 }

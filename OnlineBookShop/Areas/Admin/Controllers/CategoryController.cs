@@ -54,7 +54,7 @@ namespace BookShop.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            Category categoryFromDb = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
+            Category categoryFromDb = _unitOfWork.Category.Get(u => u.Id == id);
             if (categoryFromDb == null)
             {
                 return NotFound();
@@ -81,7 +81,7 @@ namespace BookShop.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            Category categoryFromDb = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
+            Category categoryFromDb = _unitOfWork.Category.Get(u => u.Id == id);
             if (categoryFromDb == null)
             {
                 return NotFound();
@@ -91,7 +91,7 @@ namespace BookShop.Areas.Admin.Controllers
         [HttpPost, ActionName("Delete")]
         public IActionResult DeletePOST(int? id)
         {
-            Category? obj = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
+            Category? obj = _unitOfWork.Category.Get(u => u.Id == id);
             if (obj == null)
             {
                 return NotFound();
