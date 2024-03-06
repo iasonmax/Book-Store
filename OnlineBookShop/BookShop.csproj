@@ -7,6 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\images\product\07cf7afb-ac0e-4ff0-826e-4d9ef12ea959.jpg" />
+    <Content Remove="wwwroot\images\product\14e39097-d385-4213-b058-bb5a78712850.jpg" />
+    <Content Remove="wwwroot\images\product\1b7412a7-1793-46d8-8ed9-a7a0d52faa31.jpg" />
+    <Content Remove="wwwroot\images\product\737502a3-c06d-41f0-bf74-7d144c7830e5.PNG" />
+    <Content Remove="wwwroot\images\product\7d6e8982-ac93-4c2e-ad48-723aec83d664.png" />
+    <Content Remove="wwwroot\images\product\9da47b40-87f4-4558-8405-b9d3be37fc77.png" />
+    <Content Remove="wwwroot\images\product\bd60d066-c1a5-4e1b-8500-5e75491b8717.png" />
+    <Content Remove="wwwroot\images\product\ede4eeb7-cd88-47f2-ad2b-c4fdfcd1ab40.jpg" />
+    <Content Remove="wwwroot\images\product\f6601f15-05c3-493a-adc3-c1f02613965b.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="ScaffoldingReadMe.txt" />
   </ItemGroup>
 
@@ -24,6 +36,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BookShop.DataAccess\BookShop.DataAccess.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\product\" />
   </ItemGroup>
 
 </Project>
