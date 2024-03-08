@@ -4,10 +4,13 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 using BookShop.DataAccess.data;
 using BookShop.DataAccess.Repository.IRepository;
 using BookShop.DataAccess.Repository;
+using Microsoft.AspNetCore.Authorization;
+using BookShop.Utility;
 
 namespace BookShop.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = SD.Role_Admin)]
     public class CategoryController : Controller
     {
         private readonly IUnitOfWork _unitOfWork;
