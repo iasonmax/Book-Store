@@ -119,7 +119,7 @@ namespace BookShop.Areas.Customer.Controllers
                     Price = cart.Price,
                     Count = cart.Count,
                 };
-                _unitOfWork.OrederDetail.Add(orederDetail);
+                _unitOfWork.OrderDetail.Add(orederDetail);
                 _unitOfWork.Save();
             }
 
